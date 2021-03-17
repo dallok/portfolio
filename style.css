@@ -1,0 +1,64 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #f1f0ec;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-yellow: #f5df4d;
+  --color-dark-yellow: #bfae0e;
+  --color-light-yellow: #ffff80;
+  --color-gray: #E1E2E1;
+  --color-blue: #005780;
+  --color-red: #a73730;
+  --color-black: #000000;
+  --color-green: #378661;
+  --color-light-green: #68b68e;
+  --color-dark-green: #005837;
+  --color-brown: #A3623B;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-red);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-red);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-red);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-red);
+  margin: 4px 0;
+}
