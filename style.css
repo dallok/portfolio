@@ -4,12 +4,12 @@
   --color-white: #f1f0ec;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-yellow: #f5df4d;
-  --color-dark-yellow: #bfae0e;
-  --color-light-yellow: #ffff80;
+  --color-yellow: #fcd134;
+  --color-dark-yellow: #ffff6a;
+  --color-light-yellow: #F5DF4D;
   --color-gray: #939597;
   --color-dark-gray: #616161;
-  
+  --color-ornage: #EB622B;
   --color-red: #cf5c78;
   --color-blue: #00589b;
   --color-black: #000000;
@@ -76,7 +76,7 @@ button {
 /* Typography */
 h1 {
   font-size: var(--font-large);
-  margin: 16px 0;
+  margin: 15px 0;
   font-family: var(--font-family-arch);
   color: var(--color-blue)
 }
@@ -84,7 +84,8 @@ h1 {
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  margin: 8px 0;
+  margin: 10px 0;
+  color: var(--color-dark-green);
 }
 
 h3 {
@@ -97,6 +98,7 @@ p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   margin: 4px 0;
+  color: var(--color-dark-green);
 }
 
 #navbar {
@@ -142,8 +144,8 @@ p {
 }
 
 .home__avatar {
-  width: 280px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
   margin-top: 30px; 
@@ -172,6 +174,10 @@ p {
 .section {
   text-align: center;
   padding: 50px;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -238,4 +244,74 @@ p {
 .job img {
   width: 100px;
   max-height: 40px;
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-light-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-white);
+  color: var(--color-white);
+  margin: 25px 0;
+}
+
+.skillset ul {
+  margin: 0;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-gray);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.skillset__right {
+  flex-basis: 40%;
+  height: 100%;
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+.tools {
+  background-color: var(--color-blue);
+}
+
+.tools h3 {
+  margin-top: 0;
+}
+
+.etc {
+  background-color: var(--color-green);
+}
+
+.tools__list,
+.etc__list {
+  padding-bottom: 14px;
+}
+.skill__bar {
+  background-color: var(--color-dark-gray);
+  width: 100%;
+  height: 3px;
+}
+
+.skill__value {
+  background-color: var(--color-red);
+  height: 3px;
 }
