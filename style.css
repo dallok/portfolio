@@ -8,6 +8,7 @@
   --color-dark-yellow: #bfae0e;
   --color-light-yellow: #ffff80;
   --color-gray: #939597;
+  --color-dark-gray: #616161;
   
   --color-red: #cf5c78;
   --color-blue: #00589b;
@@ -29,15 +30,19 @@
   --weight-semi-bold: 600;
   --weight-regular: 400;
 
+  /* Font family */
+  --font-family-arch: 'Archivo Black', sans-serif;
+  --font-family-nanum: 'Nanum Gothic', sans-serif;
+
   /* Size */
   --size-border-radius: 4px;
 
-  /* Transition */
-  --transition-delay: 300ms linear;
+  /* Animation */
+  --animation-duration: 250ms ease;
 }
 
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: var(--font-family-nanum);
   margin: 0;
   cursor: default;
 }
@@ -71,35 +76,27 @@ button {
 /* Typography */
 h1 {
   font-size: var(--font-large);
-  font-weight: var(--weight-bold);
-  color: var(--color-red);
   margin: 16px 0;
+  font-family: var(--font-family-arch);
+  color: var(--color-blue)
 }
 
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-red);
   margin: 8px 0;
 }
 
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-red);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-red);
   margin: 4px 0;
-}
-
-.navbar-dark {
-  height: 20px;
-  background: url("img/bg2.png") top/cover no-repeat;
 }
 
 #navbar {
@@ -126,10 +123,11 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-light-white)
+  border: 1px solid var(--color-white)
 }
 
 .navbar__menu__item:hover {
@@ -144,21 +142,21 @@ p {
 }
 
 .home__avatar {
-  width: 270px;
+  width: 280px;
   height: 270px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-white);
   margin-top: 30px; 
 ;}
 
 .home__title {
   color: var(--color-black);
-  font-family: 'Archivo Black', sans-serif;
+  font-family: var(--font-family-arch);
 }
 
 .home__description {
   color: var(--color-blue);
-  font-family: 'Archivo Black', sans-serif;
+  font-family: var(--font-family-arch);
 }
 
 .home__contact {
@@ -166,6 +164,78 @@ p {
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/* Section Common */
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  color: var(--color-blue);
+  line-height: 170px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration);
+}
+
+.major__icon:hover i {
+  color: var(--color-yellow);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title, .major__description {
+  color: var(--color-dark-green);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name, 
+.job__period {
+  color: var(--color-dark-green);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  font-size: var(--font-micro);
+}
+
+.job img {
+  width: 100px;
+  max-height: 40px;
 }

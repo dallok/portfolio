@@ -11,17 +11,18 @@
     <script src="https://kit.fontawesome.com/bce1a98f73.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar-dark"></div>
     <nav id="navbar">
       <div class="navbar__logo">
-        <a href="#"><i><img src="img/favicon.png" alt="logo" class="logo" width="80px" /></i></a>
+        <a href="#"
+          ><i><img src="img/favicon.png" alt="logo" class="logo" width="80px" /></i
+        ></a>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item active">Home</li>
@@ -44,52 +45,58 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About Me</h1>
-      <p>나를 잘 어필할 수 있는 2~3개 문장을 만들어서 추후 작성: Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam tempora maxime, dolore possimus iure provident eaque odio dolores expedita a, quo non magnam! Quasi veniam libero quidem odit eius?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam tempora maxime, dolore possimus iure provident eaque odio dolores expedita a, quo non magnam! Quasi veniam libero quidem odit eius?</p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-js-square"></i>
           </div>
-          <div class="major__title">Front-end</div>
+          <h2 class="major__title">Front-end</h2>
           <div class="major__description">HTML, CSS, <br />JavaScript, Web APIs</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-react"></i>
           </div>
-          <div class="major__title">React</div>
+          <h2 class="major__title">React</h2>
           <div class="major__description"></div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fas fa-server"></i>
           </div>
-          <div class="major__title">Back-end</div>
+          <h2 class="major__title">Back-end</h2>
           <div class="major__description">JavaScript, Nodejs <br />MongoDB</div>
         </div>
       </div>
       <div class="about__jobs">
         <div class="job">
           <img src="img/jobs/airpremia.png" alt="airpremia" class="job__logo" />
-          <p class="job__name">Flight Operations Manager at <b>Air Premia</b></p>
-          <p class="job__period">Apr 2019 - Feb 2021</p>
+          <div class="job__description">
+            <p class="job__name">Flight Operations Manager at <b>Air Premia</b></p>
+            <p class="job__period">Apr 2019 - Feb 2021</p>
+          </div>
         </div>
         <div class="job">
           <img src="img/jobs/assa.png" alt="assa" class="job__logo" />
-          <p class="job__name">Pilot Recruitment Consultant at <b>Asia Smart Solution Aviation</b></p>
-          <p class="job__period">Dec 2013 - Jul 2018</p>
+          <div class="job__description">
+            <p class="job__name">Pilot Recruitment Consultant at <b>Asia Smart Solution Aviation</b></p>
+            <p class="job__period">Dec 2013 - Jul 2018</p>
+          </div>
         </div>
         <div class="job">
           <img src="img/jobs/jejuair.png" alt="jejuair" class="job__logo" />
-          <p class="job__name">Employee of Flight Operations at <b>Jeju Air</b></p>
-          <p class="job__period">Aug 2010 - Dec 2012</p>
+          <div class="job__description">
+            <p class="job__name">Employee of Flight Operations at <b>Jeju Air</b></p>
+            <p class="job__period">Aug 2010 - Dec 2012</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -168,7 +175,7 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
@@ -237,7 +244,7 @@
       </div>
     </section>
     <!-- Testimonials -->
-    <section id="Testimonials">
+    <section id="Testimonials" class="section">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
       <div class="testimonials">
@@ -258,7 +265,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">cavok0929@gmail.com</h2>
       <div class="contact__links">
