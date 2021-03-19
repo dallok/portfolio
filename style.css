@@ -137,6 +137,14 @@ p {
   background-color: var(--color-yellow);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  display: none;
+}
+
 /* Home */
 #home {
   background: url("img/bg2.png") center/cover no-repeat;
@@ -159,6 +167,7 @@ p {
 
 .home__description {
   color: var(--color-black);
+  font-family: var(--font-family-arch);
 }
 
 .home__contact {
@@ -203,6 +212,8 @@ p {
   border: 1px solid var(--color-blue);
   border-radius: 50%;
   margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .major__icon i {
@@ -524,4 +535,47 @@ p {
 }
 .contact__links a {
   color: white;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 24px;
+  }
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .about__majors {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonials__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
