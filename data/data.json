@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "type": "static",
+      "link": "https://github.com/dallok/momentumCloneCoding",
+      "image": "../img/projects/momentum.png",
+      "imgAlt": "todo app",
+      "title": "Momentum",
+      "description": "Clone Coding with HTML, CSS and JavaScript"
+    },
+    {
+      "type": "dynamic",
+      "link": "https://github.com/dallok/simple-SNS-app",
+      "image": "../img/projects/small-sns.png",
+      "imgAlt": "Simple SNS",
+      "title": "Simple SNS Site",
+      "description": "Social Network Site with fullstack(HTML, CSS, JavaScript, Nodejs and MongoDB)"
+    },
+    {
+      "type": "react",
+      "link": "https://condescending-golick-8d31cf.netlify.app",
+      "image": "../img/projects/react-website.png",
+      "imgAlt": "React SNS",
+      "title": "Simple React SNS Site",
+      "description": "Social Network Site with React and MongoDB"
+    },
+    {
+      "type": "static",
+      "link": "https://github.com/dallok/momentumCloneCoding",
+      "image": "../img/projects/randomgame.png",
+      "imgAlt": "Random Game",
+      "title": "Random Game",
+      "description": "Random Answering WebSite with HTML, CSS and JavaScript"
+    },
+    {
+      "type": "dynamic",
+      "link": "https://github.com/dallok/shoppingmall-game",
+      "image": "../img/projects/shoppingmall-game.png",
+      "imgAlt": "Shopping Mall Game",
+      "title": "Shopping Mall Game",
+      "description": "Clone Coding with HTML, CSS and JavaScript"
+    },
+    {
+      "type": "static",
+      "link": "https://github.com/dallok/momentumCloneCoding",
+      "image": "../img/projects/macbook.png",
+      "imgAlt": "todo app",
+      "title": "Momentum",
+      "description": "Clone Coding with HTML, CSS and JavaScript"
+    },
+    {
+      "type": "dynamic",
+      "link": "https://github.com/dallok/momentumCloneCoding",
+      "image": "../img/projects/macbook.png",
+      "imgAlt": "todo app",
+      "title": "Momentum",
+      "description": "Clone Coding with HTML, CSS and JavaScript"
+    },
+    {
+      "type": "react",
+      "link": "https://github.com/dallok/momentumCloneCoding",
+      "image": "../img/projects/macbook.png",
+      "imgAlt": "todo app",
+      "title": "Momentum",
+      "description": "Clone Coding with HTML, CSS and JavaScript"
+    }
+  ]
+}
