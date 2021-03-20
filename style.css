@@ -652,9 +652,23 @@ p {
   }
 
   .major {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+  }
+  
+  .major__icon {
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
+  .about__jobs {
+    padding: 15px 
+  }
+  
   .skillset {
     flex-direction: column;
   }
