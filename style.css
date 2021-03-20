@@ -39,7 +39,7 @@
   --size-border-radius: 4px;
 
   /* Animation */
-  --animation-duration: 250ms ease;
+  --animation-duration: 250ms;
 }
 
 body {
@@ -112,6 +112,7 @@ p {
   color: var(--color-black);
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
+  margin-bottom: 0;
 }
 
 #navbar.navbar--dark {
@@ -157,10 +158,9 @@ p {
 #home {
   background: url("img/bg2.png") center/cover no-repeat;
   padding: 40px;
-  padding-top: 120px;
+  padding-top: 80px;
   text-align: center;
 }
-
 .home__avatar {
   width: 250px;
   height: 250px;
@@ -407,6 +407,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anime-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -419,6 +426,10 @@ p {
   margin: 2px;
   background-color: var(--color-dark-white);
   border-radius: var(--size-border-radius);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -512,6 +523,7 @@ p {
 /* Contact */
 #contact {
   background-color: var(--color-background-green);
+  padding: 20px;
 }
 
 .contact__title,
@@ -525,7 +537,7 @@ p {
   font-weight: var(--weight-semi-bold);
 }
 .contact__title {
-  margin: 32px 0;
+  margin: 25px 0;
 }
 
 .contact__links {
@@ -543,6 +555,25 @@ p {
 }
 .contact__links a {
   color: white;
+}
+
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 40px;
+  background-color: var(--color-gray);
+  color: var(--color-yellow);
+  border-radius: 30%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
